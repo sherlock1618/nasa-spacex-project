@@ -13,7 +13,7 @@ jobs:
     env:
       CI: true
       MONGO_URL: mongodb://localhost/nasa
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository

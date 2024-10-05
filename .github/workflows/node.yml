@@ -37,8 +37,10 @@ jobs:
       - name: Build client
         run: npm run build --prefix client
 
-      - name: RUN Test server
+      - name: Set up MongoDB
         uses: supercharge/mongodb-github-action@1.6.0
+
+      - name: RUN Test server
         run: |
           cd server
           npm test

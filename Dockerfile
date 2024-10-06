@@ -2,13 +2,15 @@ FROM node:lts-alpine
 
 WORKDIR /app
 
+RUN npm install -g cross-env
+
 COPY package*.json ./
 
 COPY client/package*.json client/
-RUN cd client && npm install client --omit=dev
+RUN cd client && npm install client
 
 COPY server/package*.json server/
-RUN cd server && npm install server --omit=dev
+RUN cd server && npm install server
 
 COPY client/ client/
 RUN npm run build --prefix client

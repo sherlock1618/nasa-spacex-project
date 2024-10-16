@@ -1,9 +1,5 @@
 # NASA Mission Control Project
 
-The completed version of our NASA project from [Complete Node.js Developer: Zero to Mastery](https://academy.zerotomastery.io/a/aff_jqtq5631/external?affcode=441520_1jw4f2ay).
-
-Keep in mind that we recommend you code along with us and use this only if you ever get stuck or you don't like to code along.
-
 ## Getting Started
 
 1. Ensure you have Node.js installed.
@@ -25,5 +21,5 @@ Keep in mind that we recommend you code along with us and use this only if you e
 ## Running the Tests
 
 To run any automated tests, run `npm test`. This will: 
-* Run all the client-side tests: `npm test --prefix client`
-* Run all the server-side tests: `npm test --prefix server` 
+* Run all the client-side tests: `cd client && npm test`
+* Run all the server-side tests: `cd server && npm test` 

@@ -88,5 +88,3 @@ Future Improvements
 - Add pagination for large mission datasets.
 - Implement a webhook system for real-time mission status updates.
 
-License
-This project is licensed under the MIT License.
